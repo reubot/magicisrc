@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>kepstin’s MagicISRC</title>
+    <title>reubot’s MagicISRC</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="fonts.css">
 <script type="text/javascript">
@@ -16,9 +16,9 @@ if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
 
 var mb_site = new URL("https://musicbrainz.org/");
 var mb_ws2_base = new URL("ws/2/", mb_site);
-var mb_client = "kepstin-magicisrc";
+var mb_client = "reubot-magicisrc";
 var mb_oauth_base = new URL("oauth2/", mb_site);
-var mb_oauth_redirect_uri = "https://magicisrc.kepstin.ca/";
+var mb_oauth_redirect_uri = "https://magicisrc.reubot.ca/";
 var mb_oauth_client_id = "oxqZoCJWy9BQXgS7UTikeA";
 var mb_oauth_client_secret = "tbE6uiFKK8wBmO6cq2Pg0Q"; // Not so secret after all, are you?
 
@@ -859,7 +859,7 @@ function restoreScrollPosition() {
 <% } %>
 </script>
 <script type="text/x-ejs" id="template_navbar">
-<a class="navbar-brand me-auto" href="<%= escapeHtml(rootLocation) %>" onclick="pushState(&quot;&quot;); return false;">kepstin’s MagicISRC</a>
+<a class="navbar-brand me-auto" href="<%= escapeHtml(rootLocation) %>" onclick="pushState(&quot;&quot;); return false;">reubot’s MagicISRC</a>
 <% if (login.userInfo) { %>
   <span class="navbar-text me-3"><%= escapeHtml(login.userInfo.sub) %></span>
   <form class="form-inline">
@@ -1024,12 +1024,12 @@ function restoreScrollPosition() {
   </div>
 </nav>
 <div class="container" id="container">
-  <h1 class="h3">kepstin’s MagicISRC</h1>
+  <h1 class="h3">reubot’s MagicISRC</h1>
   <p>If you’re seeing this, you either have Javascript disabled, or I’ve gone and broken the page.</p>
 </div>
 <footer class="text-secondary my-3">
   <div class="container">
-    <p>Copyright ©2021 Calvin Walton. Available under the terms of the MIT license. Browse the source on <a href="https://github.com/kepstin/magicisrc">Github</a>. Read the <a href="privacy.html">Privacy Policy</a>.</p>
+    <p>Copyright ©2021 Calvin Walton. Available under the terms of the MIT license. Browse the source on <a href="https://github.com/reubot/magicisrc">Github</a>. Read the <a href="privacy.html">Privacy Policy</a>.</p>
   </div>
 </footer>
 <script type="text/javascript">
