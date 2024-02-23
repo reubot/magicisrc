@@ -476,6 +476,7 @@ function fetchAccessToken(state, code) {
     .then(response => {
       login = {
         accessToken: response["access_token"],
+        refreshToken: response["refresh_token"],
         expires: new Date().getTime() + (response["expires_in"] * 1000)
       };
       window.localStorage.setItem("mb_login", JSON.stringify(login));
