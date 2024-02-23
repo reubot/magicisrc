@@ -471,6 +471,7 @@ function fetchAccessToken(state, code) {
   data.set("client_secret", mb_oauth_client_secret);
   data.set("redirect_uri", mb_oauth_redirect_uri);
   data.set("code_verifier", state.codeVerifier);
+  data.set("access_type", "offline");  
   return window.fetch(url, { method: "POST", body: data })
     .then(resolveOauthResponse)
     .then(response => {
